@@ -3,17 +3,24 @@ using ValidatingRegex;
 
 namespace RegexTesting
 {
-        public class Tests
+        public class UserTest1
         {
 
             [Test]
             public void FirstName()
             {
-                NameValidation validation = new NameValidation();
+                UserValidation validation = new UserValidation();
                 string actual = validation.FirstName("Manha");
                 Assert.AreEqual(actual, "Manha");
             }
-
+        [Test]
+        public void LastName()
+        {
+            UserValidation validation = new UserValidation();
+            string actual = validation.LastName("Mehwish");
+            Assert.AreEqual(actual, "Mehwish");
         }
+
+    }
     
 }
