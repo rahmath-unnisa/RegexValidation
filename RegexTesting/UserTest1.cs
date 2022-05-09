@@ -34,6 +34,13 @@ namespace RegexTesting
             string actual = validation.ValidateMobileNumber("9158719379");
             Assert.AreEqual(actual, "9158719379");
         }
+        [Test]
+        public void Password()
+        {
+            UserValidation validation = new UserValidation();
+            string actual = validation.PasswordValidation("Asfia777");
+            Assert.AreEqual(actual, "Asfia777");
+        }
     }
     
     
