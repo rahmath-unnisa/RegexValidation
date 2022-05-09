@@ -27,6 +27,13 @@ namespace RegexTesting
             string actual = validation.EmailValidation("asfiarehmath@gmail.com");
             Assert.AreEqual(actual, "asfiarehmath@gmail.com");
         }
+        [Test]
+        public void MobileNumber()
+        {
+            UserValidation validation = new UserValidation();
+            string actual = validation.ValidateMobileNumber("9158719379");
+            Assert.AreEqual(actual, "9158719379");
+        }
     }
     
     
